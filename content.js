@@ -210,6 +210,23 @@ function setupPanelControls(shadow) {
         isResizing = true;
         e.preventDefault();
     });
+
+    // Clear content when user presses "c" key
+document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'c' && isPanelVisible && panelFrame) {
+        const shadowRoot = panelFrame.getRootNode?.();
+        const contentText = shadowRoot?.querySelector('.content-text');
+        const placeholder = shadowRoot?.querySelector('.placeholder-text');
+
+        if (contentText && placeholder) {
+            contentText.textContent = '';
+            contentText.style.display = 'none';
+            placeholder.style.display = 'block';
+        }
+    }
+}, { passive: true });
+
+    
 }
 
 // Show the panel

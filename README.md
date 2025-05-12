@@ -13,6 +13,7 @@
 - **Minimal Design**: Clean interface that works across all websites  
 - **Privacy-Focused**: Operates locally with no data collection  
 
+
 ---
 
 ## 🛠 Installation
@@ -38,6 +39,7 @@
 - Resize by dragging the bottom-right corner  
 - Minimize with the `_` button when not in use  
 - Close with the `×` button or toggle with the extension icon  
+- Press `c` on your keyboard to instantly clear the panel
 
 ---
 
